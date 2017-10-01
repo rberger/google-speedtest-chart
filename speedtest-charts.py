@@ -8,7 +8,7 @@ import pygsheets
 import speedtest
 
 # Set constants
-DATE = datetime.datetime.now().strftime("%d-%m-%y %H:%M:%S")
+DATE = datetime.datetime.utcnow().strftime("%m/%d/%y %H:%M:%S")
 
 def get_credentials():
     """Function to check for valid OAuth access tokens."""
